@@ -24,13 +24,12 @@ export default function HomeScreen() {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,
-      // title:"testNameTitle"
+    
     });
   }, []);
 
   return (
     <SafeAreaView className="bg-white  pt-5">
-      {/* <Text style={{ fontFamily: "Urbanist" }}>   */}
 
       {/*  header*/}
       <View className=" flex flex-row pb-3 items-center mx-4 space-x-2">
@@ -69,22 +68,22 @@ export default function HomeScreen() {
 
         {/* Featured Row */}
 
-          <FeaturedRow id="123"
-          title="Featured"
-          description="paid placements from our partners"
-         featuredCategory="featured"
+          <FeaturedRow id={"123"}
+          title={"Featured"}
+          description={"paid placements from our partners"}
+         featuredCategory={"featured"}
          />
          {/* Tasty Discounts */}
-    <FeaturedRow id="1234"
-          title="Tasty Discount"
-          description="Everyone's been enjoying these juicy discounts!"
-         featuredCategory="discount"
+    <FeaturedRow id={"1234"}
+          title={"Tasty Discount"}
+          description={"Everyone's been enjoying these juicy discounts!"}
+         featuredCategory={"discount"}
          />
          {/* Offer near you */}
-    <FeaturedRow id="12345"
-          title="Offer near you!"
-          description="Why not support your local restaurant tonight!"
-         featuredCategory="Offers"
+    <FeaturedRow id={"12345"}
+          title={"Offer near you!"}
+          description={"Why not support your local restaurant tonight!"}
+         featuredCategory={"Offers"}
          />
 
 

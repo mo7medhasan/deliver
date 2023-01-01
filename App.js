@@ -8,14 +8,14 @@ import { useFonts } from 'expo-font';
 const Stack = createNativeStackNavigator();
 NativeWindStyleSheet.setOutput({
   default: "native",
-});
+})
 export default function App() {
 
 
   const [fontsLoaded] = useFonts({
 
     'Urbanist': require('./assets/fonts/Urbanist.otf'),
-  });
+  })
 
   if (!fontsLoaded) {
     return (
@@ -31,5 +31,5 @@ export default function App() {
       </Stack.Navigator>
 
       </NavigationContainer>
-  );
+  )
 }}
